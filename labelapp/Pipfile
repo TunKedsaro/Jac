@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+matplotlib = "*"
+torch = {version = "*", index = "https://download.pytorch.org/whl/cu117"}
+torchvision = "*"
+torchaudio = "*"
+ultralytics = {git = "https://github.com/THU-MIG/yolov10.git"}
+huggingface_hub = "*"
+numpy = "<2.0"
+gunicorn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
